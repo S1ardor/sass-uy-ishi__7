@@ -1,0 +1,507 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@font-face {
+  font-family: "raleway";
+  src: url("../fonts/Raleway/static/Raleway-Bold.ttf");
+}
+@font-face {
+  font-family: "lato";
+  src: url("../fonts/Lato/Lato-Bold.ttf");
+}
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 39px 0;
+}
+
+.header__link-1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+.header__link-1 .header__content-link {
+  text-decoration: none;
+  color: #282B22;
+}
+
+.hero__contant-phone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__content-iteam {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 63px;
+}
+.header__content-iteam .header_contant-icons {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.header__content-iteam .hero__contant-phone {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+}
+.header__content-iteam .hero__contant-phone a {
+  text-decoration: none;
+  color: #3D4A39;
+}
+
+.hero__menu,
+.hero__menu-1 {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .hero__menu {
+    display: block;
+  }
+  .header__link-1 {
+    flex-direction: column;
+    max-width: 50%;
+    height: 100vh;
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    background: #fff;
+    align-items: start;
+    padding-left: 20px;
+    position: fixed;
+    top: 132px;
+    right: 0;
+    justify-content: start;
+    row-gap: 40px;
+    transform: translateX(120%);
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+}
+.hero__menu-1:checked + .header__link-1 {
+  transform: translateX(0);
+  visibility: visible;
+}
+.hero__menu-1:checked + .header__link-1 .hero__menu + .fff {
+  display: none;
+}
+.hero__menu-1:checked + .header__link-1 .header__link-1 {
+  max-width: 285px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.header__one-box {
+  text-align: center;
+  margin-top: 131px;
+  background-image: url(../imgs/tv-cabinet-modern-living-room-with-armchair-plant-dark-marble-wall-3d-rendering\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 687px;
+}
+.header__one-box::after {
+  content: "";
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%);
+  width: 100%;
+  height: 687px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+}
+.header__one-box h1 {
+  max-width: 446px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 67px;
+  margin: 0 auto;
+  left: 0;
+}
+.header__one-box p {
+  max-width: 537px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 20px auto;
+  margin-bottom: 50px;
+  opacity: 80%;
+}
+.header__one-box .hero__content-iteam {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 685px;
+  width: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  z-index: 5;
+}
+.header__one-box .hero__content-iteam .button {
+  max-width: 260px;
+  width: 100%;
+  padding: 22px 56px;
+  background-color: #AE7B3C;
+  border: none;
+  color: #fff;
+  border-radius: 2px;
+  margin-bottom: 120px;
+  transition: all 0.3s;
+}
+.header__one-box .hero__content-iteam .button:hover {
+  transform: scale(1.1);
+}
+.header__one-box .hero__content-iteam .button:active {
+  transform: scale(0.9);
+}
+.header__one-box .hero__content-iteam .classs-clas {
+  max-width: 1300px;
+  width: 100%;
+  padding: 0 20px;
+}
+.header__one-box .hero__content-iteam .btnn {
+  max-width: 1300px;
+  width: 100%;
+  height: 1px;
+  border: none;
+  opacity: 0.4;
+  background: #FFF;
+  margin-bottom: 41px;
+}
+.header__one-box .hero__content-iteam .hero__content-img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  width: 100%;
+  bottom: 61px;
+  left: 200px;
+}
+.header__one-box .hero__content-iteam .hero__content-img .hero__content-stril {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 25px;
+}
+.header__one-box .hero__content-iteam span {
+  position: absolute;
+  padding: 7px 11px;
+}
+.header__one-box .hero__content-son {
+  display: flex;
+  column-gap: 15px;
+}
+.header__one-box .hero__content-son .hero__content-yumaloq-1 {
+  opacity: 30%;
+}
+
+@media (max-width: 992px) {
+  .header__one-box {
+    max-width: 992px;
+    background-image: url(../imgs/tv-cabinet-modern-living-room-with-armchair-plant-dark-marble-wall-3d-rendering\ 1\ \(2\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .btnn {
+    max-width: 300px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .hero__content-img {
+    max-width: 960px;
+    width: 100%;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 576px) {
+  .header__one-box {
+    max-width: 576px;
+    background-image: url(../imgs/tv-cabinet-modern-living-room-with-armchair-plant-dark-marble-wall-3d-rendering\ 1\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hero__content-img {
+    max-width: 570px;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .header__content-iteam {
+    display: flex;
+    column-gap: 1px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__menu {
+    display: block;
+  }
+  .header__link-1 {
+    flex-direction: column;
+    max-width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding-left: 20px;
+    position: fixed;
+    top: 130px;
+    right: 0;
+    row-gap: 40px;
+    transform: translateX(120%);
+    visibility: hidden;
+    transition: all 0.5s;
+  }
+}
+.hero__menu-1:checked + .header__link-1 {
+  transform: translateX(0);
+  visibility: visible;
+}
+.hero__menu-1:checked + .header__link-1 .hero__menu + .fff {
+  display: none;
+}
+.hero__menu-1:checked + .header__link-1 .header__link-1 {
+  max-width: 78px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+@media (max-width: 576px) {
+  .header__container {
+    max-width: 576px;
+  }
+  .header__container .header_contant-icons {
+    transform: translateX(-500%);
+    visibility: hidden;
+  }
+  .header__container .hero__contant-phone {
+    transform: translateX(-700%);
+    visibility: hidden;
+  }
+}
+.secktion__content-one {
+  max-width: 1300px;
+}
+.secktion__content-one h2 {
+  max-width: 488px;
+  margin: 140px auto;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 57px;
+  margin-bottom: 80px;
+}
+.secktion__content-one .section__content-mebil {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secktion__content-one .section__content-mebil .section__content-dizayn {
+  padding: 0 10px;
+}
+.secktion__content-one .section__content-mebil .section__content-dizayn span {
+  max-width: 27px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  opacity: 50%;
+}
+.secktion__content-one .section__content-mebil .section__content-dizayn h4 {
+  max-width: 302px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  margin: 60px 0 30px 0;
+  color: #3D4A39;
+}
+.secktion__content-one .section__content-mebil .section__content-images {
+  max-width: 333px;
+  width: 100%;
+  height: 305px;
+  margin-top: -2px;
+}
+.secktion__content-one .section__content-mebil .section__content-images-2 {
+  max-width: 322px;
+  margin-top: -3px;
+}
+.secktion__content-one .section__content-mebil .section__content-images-1 {
+  max-width: 333px;
+}
+
+@media (max-width: 992px) {
+  .section__content-dizayn h4 {
+    max-width: 352px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 60px 0 30px 0;
+    color: #3D4A39;
+  }
+  .section__content-dizayn img {
+    max-width: 280px;
+    width: 100%;
+    height: 320px;
+  }
+  .section__content-dizayn .section__content-images {
+    max-width: 280px;
+    max-height: 235px;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 576px) {
+  .secktion__content-one {
+    max-width: 576px;
+  }
+  .secktion__content-one .section__content-mebil {
+    flex-direction: column;
+  }
+  .secktion__content-one h2 {
+    max-width: 250px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 42px;
+    margin-bottom: 50px;
+  }
+  .secktion__content-one .section__content-images {
+    box-sizing: content-box;
+    padding-bottom: 50px;
+  }
+  .secktion__content-one .section__content-images-1 {
+    box-sizing: content-box;
+    padding-bottom: 50px;
+  }
+  .secktion__content-one .section__content-dizayn h4 {
+    max-width: 203px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 29px;
+    color: #3D4A39;
+  }
+  .secktion__content-one .section__content-dizayn span {
+    max-width: 22px;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 29px;
+    opacity: 50%;
+    margin-top: 10px;
+    position: absolute;
+  }
+}
+.section__content-two {
+  height: 688px;
+  margin-top: 140px;
+  background-color: #3D4A39;
+}
+.section__content-two .section__content-hondr {
+  color: #fff;
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}
+.section__content-two .section__content-hondr h2 {
+  font-weight: 400;
+  font-size: 46px;
+  line-height: 57px;
+  padding-top: 100px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.section__content-two .section__content-hondr .section__content-vas {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.section__content-two .section__content-hondr .section__content-vas h4 {
+  max-width: 241px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  opacity: 50%;
+}
+.section__content-two .section__content-hondr .section__content-vas .section__h-4 {
+  max-width: 278px;
+}
+.section__content-two .section__content-hondr .section__content-vas .mi__rgb-hr {
+  padding: 25px;
+}
+.section__content-two .section__content-hondr .section__content-vas .mi__rgb-img {
+  transition: all 0.5s;
+}
+.section__content-two .section__content-hondr .section__content-vas .mi__rgb-img:hover {
+  cursor: pointer;
+  box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 992px) {
+  .section__content-vas .mi__rgb-img {
+    padding: 0 10px;
+    transition: all 0.5s;
+  }
+  .section__content-vas .mi__rgb-img img {
+    max-width: 60px;
+  }
+  .section__content-vas .mi__rgb-img h4 {
+    max-width: 155px;
+    font-size: 12px;
+    line-height: 23px;
+  }
+  .section__content-vas .mi__rgb-img .mi__rgb-img:hover {
+    cursor: pointer;
+    box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+  }
+}
+@media (max-width: 576px) {
+  .section__content-two {
+    height: 1500px;
+  }
+  .section__content-hondr .section__content-vas {
+    flex-direction: column;
+    row-gap: 80px;
+  }
+  .section__content-hondr .section__content-vas .mi__rgb-img {
+    transition: all 0.5s;
+  }
+  .section__content-hondr .section__content-vas .mi__rgb-img:hover {
+    cursor: pointer;
+    box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 13px 12px 58px -21px rgba(0, 0, 0, 0.75);
+  }
+}/*# sourceMappingURL=style.css.map */

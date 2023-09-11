@@ -1,0 +1,10 @@
+@mixin center-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin h2{
+    font-size: 12px;
+    margin: 70px auto;
+}
